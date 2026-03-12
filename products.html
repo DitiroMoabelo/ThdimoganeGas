@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View all LPG gas cylinder sizes, refill prices and empty cylinder prices at Thedimogane Enterprises, Norkem Park.">
+  <title>Products & Prices | Thedimogane Enterprises</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__brand">
+        <img src="css/logo.jpg" alt="Thedimogane Enterprises logo" class="nav__logo-img">
+        <span>
+          <span class="nav__title">Thedimogane Enterprises</span>
+
+        </span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="products.html" class="nav__link active">Products</a></li>
+        <li><a href="order.html" class="nav__link">Order</a></li>
+        <li><a href="delivery.html" class="nav__link">Delivery</a></li>
+        <li><a href="safety.html" class="nav__link">Safety</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="https://wa.me/27715641872?text=Hi%20Thedimogane%20Enterprises!%20I%20want%20to%20order%20gas." target="_blank" class="btn btn--whatsapp btn--sm">
+          <i class="fab fa-whatsapp"></i> Order on WhatsApp
+        </a>
+        <button class="nav__theme" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right" style="font-size:0.65rem;"></i>
+        <span>Products &amp; Prices</span>
+      </nav>
+      <h1>Our <span>Products &amp; Prices</span></h1>
+      <p>Quality LPG gas refills and new cylinders at the most competitive prices in Norkem Park.</p>
+    </div>
+  </section>
+
+  <!-- TABS + PRODUCTS -->
+  <section class="price-section section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Choose Your Product</span>
+        <h2 class="section__title">Gas Refills &amp; <span>New Cylinders</span></h2>
+        <p class="section__subtitle">Select the tab below to browse refill prices or new empty cylinders for sale.</p>
+      </div>
+
+      <div class="price-tabs">
+        <button class="price-tab active" data-target="tab-refills"><i class="fas fa-fire"></i> Gas Refills</button>
+        <button class="price-tab" data-target="tab-cylinders"><i class="fas fa-compact-disc"></i> Empty Cylinders for Sale</button>
+      </div>
+
+      <!-- REFILLS -->
+      <div id="tab-refills" class="price-panel">
+        <div class="products-grid" style="margin-bottom:3rem;">
+          <div class="product-card fade-up">
+            <div class="product-card__header">
+              <img src="css/pexels-aboodi-16271901.jpg" alt="3 kg LPG gas cylinder" class="product-card__header-img">
+              <div class="product-card__header-overlay">
+                <div class="product-card__size">3 kg</div>
+                <div class="product-card__label">Camping &amp; Small Use</div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__price"><span class="currency">R</span><span class="amount">100</span></div>
+              <ul class="product-card__features">
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Ideal for camping &amp; travel</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Lightweight &amp; portable</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Same-day delivery</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <button class="btn btn--whatsapp btn--block" data-wa-order="3 kg Refill"><i class="fab fa-whatsapp"></i> Order Now</button>
+            </div>
+          </div>
+          <div class="product-card fade-up">
+            <div class="product-card__header">
+              <img src="css/pexels-33844953-9815225.jpg" alt="4.5 kg LPG gas cylinder" class="product-card__header-img">
+              <div class="product-card__header-overlay">
+                <div class="product-card__size">4.5 kg</div>
+                <div class="product-card__label">Small Household</div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__price"><span class="currency">R</span><span class="amount">150</span></div>
+              <ul class="product-card__features">
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Small household use</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Easy to handle</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Same-day delivery</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <button class="btn btn--whatsapp btn--block" data-wa-order="4.5 kg Refill"><i class="fab fa-whatsapp"></i> Order Now</button>
+            </div>
+          </div>
+          <div class="product-card fade-up">
+            <div class="product-card__header">
+              <img src="css/pexels-didsss-35382734.jpg" alt="5 kg LPG gas cylinder" class="product-card__header-img">
+              <div class="product-card__header-overlay">
+                <div class="product-card__size">5 kg</div>
+                <div class="product-card__label">Standard Size</div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__price"><span class="currency">R</span><span class="amount">160</span></div>
+              <ul class="product-card__features">
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Standard household size</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Great for cooking daily</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Same-day delivery</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <button class="btn btn--whatsapp btn--block" data-wa-order="5 kg Refill"><i class="fab fa-whatsapp"></i> Order Now</button>
+            </div>
+          </div>
+          <div class="product-card fade-up">
+            <div class="product-card__header">
+              <img src="css/pexels-didsss-35382734%20(1).jpg" alt="6 kg LPG gas cylinder" class="product-card__header-img">
+              <div class="product-card__header-overlay">
+                <div class="product-card__size">6 kg</div>
+                <div class="product-card__label">Medium Household</div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__price"><span class="currency">R</span><span class="amount">180</span></div>
+              <ul class="product-card__features">
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Medium household use</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Lasts longer than 5 kg</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Same-day delivery</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <button class="btn btn--whatsapp btn--block" data-wa-order="6 kg Refill"><i class="fab fa-whatsapp"></i> Order Now</button>
+            </div>
+          </div>
+          <div class="product-card featured fade-up">
+            <div class="product-card__header">
+              <img src="css/pexels-mitchel-onwuchuruba-2148968906-31584539.jpg" alt="7 kg LPG gas cylinder" class="product-card__header-img">
+              <div class="product-card__header-overlay">
+                <div class="product-card__size">7 kg</div>
+                <div class="product-card__label">Popular Choice</div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__price"><span class="currency">R</span><span class="amount">200</span></div>
+              <ul class="product-card__features">
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Most popular size</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Great value for families</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Same-day delivery</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <button class="btn btn--primary btn--block" data-wa-order="7 kg Refill"><i class="fab fa-whatsapp"></i> Order Now</button>
+            </div>
+          </div>
+          <div class="product-card fade-up">
+            <div class="product-card__header">
+              <img src="css/u_gqfq82f4cv-cylinder-7400529_1920.jpg" alt="9 kg LPG gas cylinder" class="product-card__header-img">
+              <div class="product-card__header-overlay">
+                <div class="product-card__size">9 kg</div>
+                <div class="product-card__label">Large Family</div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__price"><span class="currency">R</span><span class="amount">250</span></div>
+              <ul class="product-card__features">
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Large households</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Long-lasting supply</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Same-day delivery</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <button class="btn btn--whatsapp btn--block" data-wa-order="9 kg Refill"><i class="fab fa-whatsapp"></i> Order Now</button>
+            </div>
+          </div>
+          <div class="product-card fade-up">
+            <div class="product-card__header">
+              <img src="css/StockCake-Burning_gas_burners-1332857-medium.jpg" alt="19 kg commercial LPG gas cylinder" class="product-card__header-img">
+              <div class="product-card__header-overlay">
+                <div class="product-card__size">19 kg</div>
+                <div class="product-card__label">Commercial</div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__price"><span class="currency">R</span><span class="amount">500</span></div>
+              <ul class="product-card__features">
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Restaurants &amp; businesses</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> High-volume cooking</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Call for bulk order</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <button class="btn btn--whatsapp btn--block" data-wa-order="19 kg Refill"><i class="fab fa-whatsapp"></i> Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EMPTY CYLINDERS -->
+      <div id="tab-cylinders" class="price-panel" style="display:none;">
+        <div class="section__header">
+          <p class="section__subtitle">Buy a brand-new empty cylinder — then bring it back for refills at our low refill prices.</p>
+        </div>
+        <div class="products-grid" style="margin-bottom:3rem;">
+          <div class="product-card fade-up">
+            <div class="product-card__header">
+              <img src="css/pexels-aboodi-16271901.jpg" alt="3 kg empty LPG cylinder" class="product-card__header-img">
+              <div class="product-card__header-overlay">
+                <div class="product-card__size">3 kg</div>
+                <div class="product-card__label">Empty Cylinder</div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__price"><span class="currency">R</span><span class="amount">450</span></div>
+              <ul class="product-card__features">
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Brand new cylinder</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Then refill for R100</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Available now</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <button class="btn btn--whatsapp btn--block" data-wa-order="3 kg Empty Cylinder"><i class="fab fa-whatsapp"></i> Buy Cylinder</button>
+            </div>
+          </div>
+          <div class="product-card fade-up">
+            <div class="product-card__header">
+              <img src="css/pexels-didsss-35382734.jpg" alt="5 kg empty LPG cylinder" class="product-card__header-img">
+              <div class="product-card__header-overlay">
+                <div class="product-card__size">5 kg</div>
+                <div class="product-card__label">Empty Cylinder</div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__price"><span class="currency">R</span><span class="amount">550</span></div>
+              <ul class="product-card__features">
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Brand new cylinder</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Then refill for R160</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Available now</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <button class="btn btn--whatsapp btn--block" data-wa-order="5 kg Empty Cylinder"><i class="fab fa-whatsapp"></i> Buy Cylinder</button>
+            </div>
+          </div>
+          <div class="product-card fade-up">
+            <div class="product-card__header">
+              <img src="css/u_gqfq82f4cv-cylinder-7400529_1920.jpg" alt="9 kg empty LPG cylinder" class="product-card__header-img">
+              <div class="product-card__header-overlay">
+                <div class="product-card__size">9 kg</div>
+                <div class="product-card__label">Empty Cylinder</div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__price"><span class="currency">R</span><span class="amount">650</span></div>
+              <ul class="product-card__features">
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Brand new cylinder</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Then refill for R250</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Available now</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <button class="btn btn--whatsapp btn--block" data-wa-order="9 kg Empty Cylinder"><i class="fab fa-whatsapp"></i> Buy Cylinder</button>
+            </div>
+          </div>
+          <div class="product-card fade-up">
+            <div class="product-card__header">
+              <img src="css/pexels-mitchel-onwuchuruba-2148968906-31584539.jpg" alt="19 kg empty LPG cylinder" class="product-card__header-img">
+              <div class="product-card__header-overlay">
+                <div class="product-card__size">19 kg</div>
+                <div class="product-card__label">Empty Cylinder</div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__price"><span class="currency">R</span><span class="amount">1550</span></div>
+              <ul class="product-card__features">
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Brand new cylinder</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Then refill for R500</li>
+                <li class="product-card__feature"><i class="fas fa-check-circle"></i> Commercial grade</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <button class="btn btn--whatsapp btn--block" data-wa-order="19 kg Empty Cylinder"><i class="fab fa-whatsapp"></i> Buy Cylinder</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FULL SUMMARY TABLE -->
+      <div class="section__header" style="margin-top:3rem;">
+        <h2 class="section__title">Complete <span>Price Summary</span></h2>
+      </div>
+      <div class="price-table-wrap fade-up">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Size</th>
+              <th>Refill Price</th>
+              <th>Empty Cylinder Price</th>
+              <th>Order</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>3 kg</strong></td><td><span class="price-tag">R 100</span></td><td><span class="price-tag">R 450</span></td><td><button class="btn btn--whatsapp btn--sm" data-wa-order="3 kg"><i class="fab fa-whatsapp"></i></button></td></tr>
+            <tr><td><strong>4.5 kg</strong></td><td><span class="price-tag">R 150</span></td><td><span class="badge badge--gray">Not available</span></td><td><button class="btn btn--whatsapp btn--sm" data-wa-order="4.5 kg"><i class="fab fa-whatsapp"></i></button></td></tr>
+            <tr><td><strong>5 kg</strong></td><td><span class="price-tag">R 160</span></td><td><span class="price-tag">R 550</span></td><td><button class="btn btn--whatsapp btn--sm" data-wa-order="5 kg"><i class="fab fa-whatsapp"></i></button></td></tr>
+            <tr><td><strong>6 kg</strong></td><td><span class="price-tag">R 180</span></td><td><span class="badge badge--gray">Not available</span></td><td><button class="btn btn--whatsapp btn--sm" data-wa-order="6 kg"><i class="fab fa-whatsapp"></i></button></td></tr>
+            <tr><td><strong>7 kg</strong></td><td><span class="price-tag">R 200</span></td><td><span class="badge badge--gray">Not available</span></td><td><button class="btn btn--whatsapp btn--sm" data-wa-order="7 kg"><i class="fab fa-whatsapp"></i></button></td></tr>
+            <tr><td><strong>9 kg</strong></td><td><span class="price-tag">R 250</span></td><td><span class="price-tag">R 650</span></td><td><button class="btn btn--whatsapp btn--sm" data-wa-order="9 kg"><i class="fab fa-whatsapp"></i></button></td></tr>
+            <tr><td><strong>19 kg</strong></td><td><span class="price-tag">R 500</span></td><td><span class="price-tag">R 1 550</span></td><td><button class="btn btn--whatsapp btn--sm" data-wa-order="19 kg"><i class="fab fa-whatsapp"></i></button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="section__title">Ready to <span>Order?</span></h2>
+      <p>Use our quick order form or contact us directly on WhatsApp to place your order today.</p>
+      <div class="cta-actions">
+        <a href="order.html" class="btn btn--primary btn--lg"><i class="fas fa-shopping-cart"></i> Place an Order</a>
+        <a href="https://wa.me/27715641872?text=Hi!%20I%27d%20like%20to%20order%20gas." target="_blank" class="btn btn--whatsapp btn--lg"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo"><img src="css/logo.jpg" alt="Thedimogane Enterprises logo" class="footer__logo-img"><div><strong>Thedimogane Enterprises</strong></div></div>
+          <p class="footer__desc">Your trusted local source for LPG gas refills, cylinder exchange and new cylinders in Norkem Park.</p>
+          <a href="https://wa.me/27715641872" target="_blank" class="btn btn--whatsapp btn--sm"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products &amp; Prices</a></li>
+            <li><a href="order.html">Order Gas</a></li>
+            <li><a href="delivery.html">Delivery Areas</a></li>
+            <li><a href="safety.html">Safety Tips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Gas Prices</h4>
+          <ul class="footer__products">
+            <li>3 kg — <span style="color:var(--accent)">R100</span></li>
+            <li>5 kg — <span style="color:var(--accent)">R160</span></li>
+            <li>7 kg — <span style="color:var(--accent)">R200</span></li>
+            <li>9 kg — <span style="color:var(--accent)">R250</span></li>
+            <li>19 kg — <span style="color:var(--accent)">R500</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer__contact">
+            <p><i class="fas fa-phone"></i><a href="tel:+27715641872">071 564 1872</a></p>
+            <p><i class="fab fa-whatsapp"></i><a href="https://wa.me/27715641872" target="_blank">WhatsApp</a></p>
+            <p><i class="fas fa-map-marker-alt"></i>Norkem Park Ext 4, Kempton Park</p>
+            <p><i class="fas fa-clock"></i>Mon–Sat: 7am–7pm | Sun: 8am–5pm</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Thedimogane Enterprises. All rights reserved.</p>
+        <p>Made with <span style="color:var(--primary)">&#10084;</span> in Norkem Park</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/27715641872?text=Hi!%20I%20need%20gas%20please." target="_blank" class="float-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="float-whatsapp__tooltip">Order on WhatsApp</span>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

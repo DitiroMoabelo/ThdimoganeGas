@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Thedimogane Enterprises for LPG gas delivery in Norkem Park. Call or WhatsApp 071 564 1872. Located in Norkem Park Ext 4, Kempton Park.">
+  <title>Contact Us | Thedimogane Enterprises</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1.25rem; margin-bottom: 3rem; }
+    .contact-card { background: var(--white); border: 1px solid var(--gray-light); border-radius: var(--radius-lg); padding: 1.75rem; text-align: center; transition: var(--transition); }
+    .contact-card:hover { box-shadow: var(--shadow-lg); border-color: rgba(232,93,4,0.3); transform: translateY(-3px); }
+    .contact-card__icon { width: 64px; height: 64px; margin: 0 auto 1rem; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-size: 1.75rem; }
+    .contact-card__icon--primary { background: linear-gradient(135deg, rgba(232,93,4,0.12), rgba(255,186,8,0.12)); color: var(--primary); }
+    .contact-card__icon--whatsapp { background: rgba(37,211,102,0.12); color: var(--whatsapp); }
+    .contact-card__icon--map { background: rgba(59,130,246,0.12); color: #2563EB; }
+    .contact-card__icon--clock { background: rgba(139,92,246,0.12); color: #7C3AED; }
+    .contact-card h3 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gray); margin-bottom: 0.4rem; }
+    .contact-card p { font-size: 1.05rem; font-weight: 600; color: var(--dark); line-height: 1.4; }
+    .contact-card a { color: var(--primary); }
+    .contact-card a:hover { text-decoration: underline; }
+    .wa-cta { background: linear-gradient(135deg, #075E54, #128C7E); border-radius: var(--radius-lg); padding: 2.5rem; text-align: center; margin-bottom: 3rem; color: var(--white); }
+    .wa-cta h2 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+    .wa-cta p { font-size: 0.95rem; opacity: 0.8; margin-bottom: 1.5rem; }
+    .wa-quick-btns { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+    .wa-quick-btn { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); color: var(--white); padding: 0.55rem 1.15rem; border-radius: var(--radius-full); font-size: 0.855rem; cursor: pointer; transition: var(--transition); font-family: var(--font); font-weight: 500; }
+    .wa-quick-btn:hover { background: rgba(255,255,255,0.22); }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--gray-light); border-radius: var(--radius); overflow: hidden; }
+    .faq-question { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.1rem 1.25rem; cursor: pointer; font-weight: 600; font-size: 0.975rem; background: none; border: none; font-family: var(--font); text-align: left; transition: var(--transition); color: var(--dark); }
+    .faq-question:hover { background: var(--off-white); }
+    .faq-question i { color: var(--primary); transition: var(--transition); flex-shrink: 0; }
+    .faq-item.open .faq-question i { transform: rotate(180deg); }
+    .faq-answer { display: none; padding: 0 1.25rem 1.1rem; font-size: 0.9rem; color: var(--gray); line-height: 1.75; border-top: 1px solid var(--gray-light); padding-top: 0.75rem; }
+    .faq-item.open .faq-answer { display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__brand">
+        <img src="css/logo.jpg" alt="Thedimogane Enterprises logo" class="nav__logo-img">
+        <span>
+          <span class="nav__title">Thedimogane Enterprises</span>
+
+        </span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="products.html" class="nav__link">Products </a></li>
+        <li><a href="order.html" class="nav__link">Order</a></li>
+        <li><a href="delivery.html" class="nav__link">Delivery</a></li>
+        <li><a href="safety.html" class="nav__link">Safety</a></li>
+        <li><a href="contact.html" class="nav__link active">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="https://wa.me/27715641872?text=Hi%20Thedimogane%20Enterprises!%20I%20want%20to%20order%20gas." target="_blank" class="btn btn--whatsapp btn--sm">
+          <i class="fab fa-whatsapp"></i> Order on WhatsApp
+        </a>
+        <button class="nav__theme" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right" style="font-size:0.65rem;"></i>
+        <span>Contact Us</span>
+      </nav>
+      <h1>Get in <span>Touch</span></h1>
+      <p>We're available 7 days a week. Reach us by phone, WhatsApp, or the form below.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-cards fade-up">
+        <div class="contact-card">
+          <div class="contact-card__icon contact-card__icon--primary"><i class="fas fa-phone"></i></div>
+          <h3>Phone</h3>
+          <p><a href="tel:+27715641872">071 564 1872</a></p>
+          <p style="font-size:0.8rem;color:var(--gray);margin-top:0.25rem;">Call us anytime during business hours</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card__icon contact-card__icon--whatsapp"><i class="fab fa-whatsapp"></i></div>
+          <h3>WhatsApp</h3>
+          <p><a href="https://wa.me/27715641872" target="_blank" style="color:var(--whatsapp);">071 564 1872</a></p>
+          <p style="font-size:0.8rem;color:var(--gray);margin-top:0.25rem;">Fastest way to place your order</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card__icon contact-card__icon--map"><i class="fas fa-map-marker-alt"></i></div>
+          <h3>Location</h3>
+          <p>Norkem Park Ext 4</p>
+          <p style="font-size:0.8rem;color:var(--gray);margin-top:0.25rem;">Kempton Park, Gauteng</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card__icon contact-card__icon--clock"><i class="fas fa-clock"></i></div>
+          <h3>Business Hours</h3>
+          <p>Mon–Sat: 7am–7pm</p>
+          <p style="font-size:0.9rem;color:var(--gray);font-weight:500;">Sunday: 8am–5pm</p>
+        </div>
+      </div>
+
+      <!-- WHATSAPP CTA -->
+      <div class="wa-cta fade-up">
+        <i class="fab fa-whatsapp" style="font-size:2.5rem;margin-bottom:0.75rem;display:block;"></i>
+        <h2>Message Us on WhatsApp</h2>
+        <p>The quickest way to order is to send us a WhatsApp message. Tap a quick message below!</p>
+        <div class="wa-quick-btns">
+          <button class="wa-quick-btn" onclick="openWhatsApp('Hi Mr P! I\'d like to order gas please.')">🔥 I want to order gas</button>
+          <button class="wa-quick-btn" onclick="openWhatsApp('Hi! What is the price for a 9 kg refill today?')">💬 Ask about pricing</button>
+          <button class="wa-quick-btn" onclick="openWhatsApp('Hi! Do you deliver to my area?')">🚚 Check my delivery area</button>
+          <button class="wa-quick-btn" onclick="openWhatsApp('Hi! I have a question about gas safety.')">🛡️ Safety question</button>
+        </div>
+        <a href="https://wa.me/27715641872" target="_blank" class="btn btn--whatsapp btn--lg" style="margin-top:1.5rem;">
+          <i class="fab fa-whatsapp"></i> Open WhatsApp Chat
+        </a>
+      </div>
+
+      <!-- CONTACT FORM + MAP -->
+      <div class="contact-layout fade-up">
+        <!-- FORM -->
+        <div>
+          <h2 style="margin-bottom:0.5rem;font-size:1.35rem;">Send Us a Message</h2>
+          <p style="color:var(--gray);font-size:0.9rem;margin-bottom:1.5rem;">Your message will be sent to our WhatsApp for a fast response.</p>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Your Name <span class="required">*</span></label>
+                <input type="text" id="contactName" class="form-control" placeholder="Your full name" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="contactPhone">Phone Number</label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="Your phone number" autocomplete="tel">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <select id="contactSubject" class="form-control">
+                <option value="">— Select a subject —</option>
+                <option value="Gas Order">Place a Gas Order</option>
+                <option value="Pricing Enquiry">Pricing Enquiry</option>
+                <option value="Delivery Area Question">Delivery Area Question</option>
+                <option value="Safety Question">Safety Question</option>
+                <option value="Complaint or Feedback">Complaint or Feedback</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message <span class="required">*</span></label>
+              <textarea id="contactMessage" class="form-control" rows="5" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--whatsapp btn--block btn--lg">
+              <i class="fab fa-whatsapp"></i> Send via WhatsApp
+            </button>
+          </form>
+        </div>
+
+        <!-- HOURS -->
+        <div>
+          <h2 style="margin-bottom:1.5rem;font-size:1.35rem;">Business Hours</h2>
+          <table class="hours-table" style="width:100%;margin-bottom:2rem;">
+            <tr><td><i class="fas fa-circle" style="font-size:0.5rem;color:var(--success);margin-right:0.4rem;"></i>Monday</td><td>7:00am – 7:00pm</td></tr>
+            <tr><td><i class="fas fa-circle" style="font-size:0.5rem;color:var(--success);margin-right:0.4rem;"></i>Tuesday</td><td>7:00am – 7:00pm</td></tr>
+            <tr><td><i class="fas fa-circle" style="font-size:0.5rem;color:var(--success);margin-right:0.4rem;"></i>Wednesday</td><td>7:00am – 7:00pm</td></tr>
+            <tr><td><i class="fas fa-circle" style="font-size:0.5rem;color:var(--success);margin-right:0.4rem;"></i>Thursday</td><td>7:00am – 7:00pm</td></tr>
+            <tr><td><i class="fas fa-circle" style="font-size:0.5rem;color:var(--success);margin-right:0.4rem;"></i>Friday</td><td>7:00am – 7:00pm</td></tr>
+            <tr><td><i class="fas fa-circle" style="font-size:0.5rem;color:var(--success);margin-right:0.4rem;"></i>Saturday</td><td>7:00am – 7:00pm</td></tr>
+            <tr><td><i class="fas fa-circle" style="font-size:0.5rem;color:var(--accent);margin-right:0.4rem;"></i>Sunday</td><td>8:00am – 5:00pm</td></tr>
+          </table>
+
+          <div style="background:rgba(232,93,4,0.05);border:1px solid rgba(232,93,4,0.2);border-radius:var(--radius);padding:1.25rem;">
+            <h4 style="font-size:0.95rem;margin-bottom:0.5rem;"><i class="fas fa-bolt" style="color:var(--primary);margin-right:0.4rem;"></i>Same-Day Delivery</h4>
+            <p style="font-size:0.875rem;color:var(--gray);line-height:1.65;">Order before 4pm Monday–Saturday for same-day delivery to Norkem Park, Birchleigh, Terenure, Birch Acres and Van Riebeeck.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAP -->
+      <div class="section__header" style="margin-top:3rem;">
+        <h2 class="section__title">Find Us on the <span>Map</span></h2>
+        <p class="section__subtitle">Norkem Park Ext 4, Kempton Park, Gauteng</p>
+      </div>
+      <div class="map-container fade-up">
+        <iframe
+          src="https://maps.google.com/maps?q=Norkem+Park+Ext+4,+Kempton+Park,+Gauteng,+South+Africa&output=embed&z=15"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Thedimogane Enterprises — Norkem Park Ext 4">
+        </iframe>
+      </div>
+
+      <!-- FAQ -->
+      <div class="section__header" style="margin-top:3rem;">
+        <h2 class="section__title">Frequently Asked <span>Questions</span></h2>
+      </div>
+      <div class="faq-list fade-up">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer same-day delivery?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">Yes! We offer same-day delivery if you order before 4pm on Monday to Saturday. Sunday orders may take longer depending on availability. Contact us on WhatsApp for urgent requests.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How do I pay for my gas order?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">We accept cash on delivery. Please have the exact amount ready when our driver arrives. For larger commercial orders, please contact us in advance to discuss payment options.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How do I place an order?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">The easiest way is to WhatsApp us at 071 564 1872 with your name, address, and the cylinder size you need. You can also use our online order form on the Order Gas page, which will send your details directly to our WhatsApp.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you sell empty cylinders?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">Yes! We sell new empty cylinders in 3 kg (R450), 5 kg (R550), 9 kg (R650), and 19 kg (R1,550) sizes. Once you have your own cylinder, you only pay the refill price for future orders.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What areas do you deliver to?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">We currently deliver to Norkem Park (all extensions), Birchleigh, Terenure, Birch Acres and Van Riebeeck. Not sure if you're in our area? Just WhatsApp us your address and we'll confirm!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo"><img src="css/logo.jpg" alt="Thedimogane Enterprises logo" class="footer__logo-img"><div><strong>Thedimogane Enterprises</strong></div></div>
+          <p class="footer__desc">Your trusted local source for LPG gas in Norkem Park and surrounding areas.</p>
+          <a href="https://wa.me/27715641872" target="_blank" class="btn btn--whatsapp btn--sm"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products &amp; Prices</a></li>
+            <li><a href="order.html">Order Gas</a></li>
+            <li><a href="delivery.html">Delivery Areas</a></li>
+            <li><a href="safety.html">Safety Tips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Gas Prices</h4>
+          <ul class="footer__products">
+            <li>3 kg — <span style="color:var(--accent)">R100</span></li>
+            <li>5 kg — <span style="color:var(--accent)">R160</span></li>
+            <li>7 kg — <span style="color:var(--accent)">R200</span></li>
+            <li>9 kg — <span style="color:var(--accent)">R250</span></li>
+            <li>19 kg — <span style="color:var(--accent)">R500</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer__contact">
+            <p><i class="fas fa-phone"></i><a href="tel:+27715641872">071 564 1872</a></p>
+            <p><i class="fab fa-whatsapp"></i><a href="https://wa.me/27715641872" target="_blank">WhatsApp</a></p>
+            <p><i class="fas fa-map-marker-alt"></i>Norkem Park Ext 4, Kempton Park</p>
+            <p><i class="fas fa-clock"></i>Mon–Sat: 7am–7pm | Sun: 8am–5pm</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Thedimogane Enterprises. All rights reserved.</p>
+        <p>Made with <span style="color:var(--primary)">&#10084;</span> in Norkem Park</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/27715641872?text=Hi!%20I%20need%20gas%20please." target="_blank" class="float-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="float-whatsapp__tooltip">Order on WhatsApp</span>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
